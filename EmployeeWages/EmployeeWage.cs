@@ -8,20 +8,31 @@ namespace EmployeeWages
 {
     internal class EmployeeWage
     {
-        public static void DisplayEmployeeWage()
+        /// <summary>
+        /// Employee Wage
+        /// </summary>
+        public static void DisplayEmployeeWage() //creating method for a class
         {
-            int isPresent = 1;
-            Random random = new Random();
-            int empCheck = random.Next(0, 2);
-            if (empCheck == isPresent)
-            {
-                Console.WriteLine("Employee is present");
+            
+                int isFullTime = 1;
+                int empHrs = 0;
+                int empRatePerHr = 20;
+                int employeeWage = 0;
+                Random random = new Random();
+                int empCheck = random.Next(0, 2);
+                if (empCheck == isFullTime)
+                {
+                    empHrs = 8;
+                    Console.WriteLine("Employee is present");
 
-            }
-            else
-            {
-                Console.WriteLine("Employee is absent");
-            }
+                }
+                else
+                {
+                    Console.WriteLine("Employee is absent");
+                }
+                employeeWage = empHrs * empRatePerHr; //Gett the total employee wage
+                Console.WriteLine("Employee Wage:" + employeeWage);
+            
         }
     }
 }
