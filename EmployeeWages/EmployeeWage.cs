@@ -13,40 +13,45 @@ namespace EmployeeWages
         /// </summary>
         public static void DisplayEmployeeWage() //creating method for a class
         {
-            const int Is_Full_Time = 1; //cretaing a constants value by using the const key word
+            const int Is_Full_Time = 1; //fields here to assign constant values by using keyword const
             const int Is_Part_Time = 2;
             int empHrs = 0;
             const int Emp_Rate_Per_Hr = 20;
             const int Total_Working_Days = 20;
+            const int Working_Hours = 100;
             int totalEmployeeWage = 0;
             int employeeWage = 0;
-            Random random = new Random(); // creating a object for a random value
-            for (int day = 1; day <= Total_Working_Days; day++)
+            int empWorkingHours = 0;
+            Random random = new Random(); //Creating a object for random value
+            int day = 1;
+            while (day <= Total_Working_Days && empWorkingHours <= Working_Hours)
             {
-                int empCheck = random.Next(0, 3); // to get the values randomly between 0 to 2
+                int empCheck = random.Next(0, 3);// To get the values from 0 to 2
                 switch (empCheck)
                 {
-                    case Is_Full_Time: //If random value 1 then it will execute the block statemnt
+                    case Is_Full_Time: // If random value is 1 it will execute block of statement
                         empHrs = 8;
                         Console.WriteLine("{0} day Employee is working full time", day);
                         break;
-                    case Is_Part_Time: // if random value 2 then it will execute the block statemet
+                    case Is_Part_Time: // If random value is 2 it will execute block of statement
                         empHrs = 4;
                         Console.WriteLine("{0} day Employee is working part time", day);
 
                         break;
-                    default: // if random value is 0 then it will execute the block of statement
-                        empHrs = 0;
+                    default:
+                        empHrs = 0; // If random value is 0 then it will execotr
                         Console.WriteLine("{0} day Employee is absent", day);
 
                         break;
-                }// claculation part for a employee wage
+                }
+                // Employee wage calculation part
                 employeeWage = empHrs * Emp_Rate_Per_Hr;
                 Console.WriteLine("Employee Wage :" + employeeWage);
-                //totalEmployeeWage=totlaEmployeeWage+employeeWage
-                totalEmployeeWage += employeeWage;
+                totalEmployeeWage += employeeWage; //totalEmployeeWage=totlaEmployeeWage+employeeWage
+                empWorkingHours += empHrs;         //empWorkingHours=empWorkingHours+empHrs
+                day++;
             }
-            Console.WriteLine("Total employee wage per 20 days:" + totalEmployeeWage);  // here we get the total employee wage
+            Console.WriteLine("Total employee wage per {0} days {1} Hrs: {2}", Total_Working_Days, empWorkingHours, totalEmployeeWage);//To get the total wage
         }     
     }
 }
