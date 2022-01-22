@@ -65,6 +65,7 @@ namespace EmployeeWages
                 }
                 return totalEmpHrs * companyEmpWage.empRatePerHr;
             }
+            Console.ReadLine();
         }
     }   
     
