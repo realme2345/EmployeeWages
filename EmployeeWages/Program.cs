@@ -15,7 +15,7 @@ namespace EmployeeWages
             empWageBuilder.AddCompanyEmpWage("TATA", 20, 23, 100);
             empWageBuilder.AddCompanyEmpWage("Wipro", 22, 22, 100);
             empWageBuilder.computeEmpWage();
-            Console.ReadLine();
+            Console.WriteLine("Total Wage for Dmart company :" + empWageBuilder.getTotalWage("Dmart"));
         }
     }
 }
