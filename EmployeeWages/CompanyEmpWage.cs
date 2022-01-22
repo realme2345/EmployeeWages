@@ -8,6 +8,11 @@ namespace EmployeeWages
 {/// <summary>
 /// Employee Wage
 /// </summary>
+    //public interface IComputeEmpWages
+    //{
+    //    public void AddEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPerMonth);
+    //    public void ComputeEmpWage();
+    //}
     class CompanyEmpWage 
     {
 
