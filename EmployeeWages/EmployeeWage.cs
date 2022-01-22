@@ -9,7 +9,7 @@ namespace EmployeeWages
     public class EmployeeWage  //List of multiple companies to manage employee Wages
     {
         /// <summary>
-        /// Employee Wage
+        /// Ability to store the daily wage along with total employee wage
         /// </summary            
         public const int Is_Full_Time = 2; //fields here to assign constant values by using keyword const
         public const int Is_Part_Time = 1;
@@ -35,10 +35,9 @@ namespace EmployeeWages
         private int computeEmpWage( CompanyEmpWage companyEmpWage)
         {
             {
-                int empHrs = 0,totalEmpHrs= 0,totalWorkingDays = 1;
-                while (totalEmpHrs <=companyEmpWage.maxHoursPerMonth && totalWorkingDays < companyEmpWage.numOfWorkingDays)
+                int empHrs = 0,totalEmpHrs= 0,totalWorkingDays = 1,DailyWage=0;
+                while (totalEmpHrs <= companyEmpWage.maxHoursPerMonth && totalWorkingDays < companyEmpWage.numOfWorkingDays)
                 {
-                    //totalWorkingDays++;
                     Random random = new Random(); //Creating a object for random value
                     int empCheck = random.Next(0, 3);// To get the values from 0 to 2
                     switch (empCheck)
@@ -59,13 +58,14 @@ namespace EmployeeWages
                     }
                     // Employee wage calculation part
                     totalEmpHrs += empHrs;
-                    Console.WriteLine("Day {0} is {1} hrs",totalWorkingDays,empHrs );
+                    Console.WriteLine("Day {0} is {1} hrs", totalWorkingDays, empHrs);
                     totalWorkingDays++;
-
+                    DailyWage = empHrs *companyEmpWage.empRatePerHr;
+                    int[] total = {DailyWage};          // Creting an arry for to store the Daily employee wage
+                    Console.WriteLine("Daily Wage of Employee: {0}",total[0]);
                 }
                 return totalEmpHrs * companyEmpWage.empRatePerHr;
             }
-            Console.ReadLine();
         }
     }   
     

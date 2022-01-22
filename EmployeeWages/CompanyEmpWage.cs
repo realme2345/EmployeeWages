@@ -8,11 +8,6 @@ namespace EmployeeWages
 {/// <summary>
 /// Employee Wage
 /// </summary>
-    //public interface IComputeEmpWages
-    //{
-    //    public void AddEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPerMonth);
-    //    public void ComputeEmpWage();
-    //}
     class CompanyEmpWage 
     {
 
@@ -21,22 +16,20 @@ namespace EmployeeWages
         public int numOfWorkingDays;
         public int maxHoursPerMonth;
         public int totalEmployeeWage;
-
         public CompanyEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPermonth)
-        {
-            this.company = company;  // constructer method
+        { 
+            this.company = company;  //  parameterised constructer method
             this.empRatePerHr = empRatePerHr;
             this.numOfWorkingDays = numOfWorkingDays;
             this.maxHoursPerMonth = maxHoursPermonth;
         }
-        public void setTotalEmployeeWage(int totalEmployeeWage)
+        public void setTotalEmployeeWage(int totalEmployeeWage) // creating method for to get total employee wage
         {
              this.totalEmployeeWage = totalEmployeeWage;
         }
         public string toString()
         {
             return "Total Emp Wage for company :" + this.company + "is :" + this.totalEmployeeWage;
-            Console.ReadLine();
         }
     }
 
