@@ -10,12 +10,10 @@ namespace EmployeeWages
     {
         static void Main(string[] args)
         {
-            EmployeeWage Dmart = new EmployeeWage("Dmart", 26, 27, 100);
-            EmployeeWage TATA = new EmployeeWage("TATA", 22, 25, 70);
-            Dmart.DisplayEmployeeWage();
-            Console.WriteLine(Dmart.toString());
-            TATA.DisplayEmployeeWage();
-            Console.WriteLine(TATA.toString());
+            EmployeeWage empWageBuilder= new EmployeeWage();
+            empWageBuilder.AddCompanyEmpWage("Dmart", 20, 20, 90);
+            empWageBuilder.AddCompanyEmpWage("TATA", 20, 23, 100);
+            empWageBuilder.computeEmpWage();
         }
     }
 }
