@@ -8,6 +8,11 @@ namespace EmployeeWages
 {/// <summary>
 /// Employee Wage
 /// </summary>
+    public interface IComputeEmployeeWages
+    {
+        void AddCompanyEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPermonth);
+        void computeEmpWage();
+    }
     class CompanyEmpWage 
     {
 
@@ -30,8 +35,7 @@ namespace EmployeeWages
         }
         public string toString()
         {
-            return "Total Emp Wage for company :" + this.company + "is :" + this.totalEmployeeWage;
-            Console.ReadLine();
+            return "Total Emp Wage for company :" + this.company +"\tis :" + this.totalEmployeeWage;
         }
     }
 
