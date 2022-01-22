@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWages
 {
-    public class EmployeeWage 
+    public class EmployeeWage  //List of multiple companies to manage employee Wages
     {
         /// <summary>
         /// Employee Wage
