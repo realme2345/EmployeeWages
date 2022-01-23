@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWages
 {
-    internal class EmployeeWage
+    class EmployeeWage
     {
         /// <summary>
         /// Employee Wage
