@@ -34,7 +34,7 @@ namespace EmployeeWages
         }
         private int computeEmpWage( CompanyEmpWage companyEmpWage)
         {
-            {
+            
                 int empHrs = 0,totalEmpHrs= 0,totalWorkingDays = 1;
                 while (totalEmpHrs <=companyEmpWage.maxHoursPerMonth && totalWorkingDays < companyEmpWage.numOfWorkingDays)
                 {
@@ -64,8 +64,7 @@ namespace EmployeeWages
 
                 }
                 return totalEmpHrs * companyEmpWage.empRatePerHr;
-            }
-            Console.ReadLine();
+            
         }
     }   
     
