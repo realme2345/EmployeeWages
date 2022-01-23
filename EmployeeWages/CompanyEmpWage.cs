@@ -19,7 +19,7 @@ namespace EmployeeWages
 
         public CompanyEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPermonth)
         {
-            this.company = company;  // constructer method
+            this.company = company;  // constructer method to assigning user values 
             this.empRatePerHr = empRatePerHr;
             this.numOfWorkingDays = numOfWorkingDays;
             this.maxHoursPerMonth = maxHoursPermonth;

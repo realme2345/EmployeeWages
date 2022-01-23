@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace EmployeeWages
 {
+/// <summary>
+/// Employee Wage
+/// </summary>
     class EmployeeWage
     {
-        /// <summary>
-        /// Employee Wage
-        /// </summary            
         public const int Is_Full_Time = 2; //fields here to assign constant values by using keyword const
         public const int Is_Part_Time = 1;
         private int numOfCompany = 0;
@@ -42,7 +42,8 @@ namespace EmployeeWages
                 int empCheck = random.Next(0, 3);// To get the values from 0 to 2
                 switch (empCheck)
                 {
-                    case Is_Full_Time: // If random value is 1 it will execute block of statement
+                    case Is_Full_Time:
+                        // If random value is 1 it will execute block of statement
                         empHrs = 8;
                         break;
                     case Is_Part_Time: // If random value is 2 it will execute block of statement
@@ -59,6 +60,5 @@ namespace EmployeeWages
             }
             return totalEmpHrs * companyEmpWage.empRatePerHr;
         }
-    }   
-    
+    }    
 }

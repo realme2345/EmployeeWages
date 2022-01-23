@@ -10,7 +10,7 @@ namespace EmployeeWages
     {
         static void Main(string[] args)
         {
-            EmployeeWage empWageBuilder= new EmployeeWage();
+            EmployeeWage empWageBuilder= new EmployeeWage();// Creating object for method
             empWageBuilder.AddCompanyEmpWage("Dmart", 20, 20, 90);
             empWageBuilder.AddCompanyEmpWage("TATA", 20, 23, 100);
             empWageBuilder.computeEmpWage();
