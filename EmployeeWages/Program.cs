@@ -10,7 +10,7 @@ namespace EmployeeWages
     {
         static void Main(string[] args)
         {
-            EmployeeWage.DisplayEmployeeWage("Dmart", 16, 20, 80);
+            EmployeeWage.DisplayEmployeeWage("Dmart", 16, 20, 80); //static method calling
             EmployeeWage.DisplayEmployeeWage("relieance", 18, 20, 100);
         }
     }

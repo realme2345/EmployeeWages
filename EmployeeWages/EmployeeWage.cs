@@ -46,9 +46,6 @@ namespace EmployeeWages
                 day++;
             }
             Console.WriteLine("The Company {0} employee wage per {1} days {2} Hrs: {3}", company, totalWorkingDays, empWorkingHours, totalEmployeeWage);//To get the total wage
-
-
-
         }
     }
 }
