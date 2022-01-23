@@ -10,13 +10,7 @@ namespace EmployeeWages
     {
         static void Main(string[] args)
         {
-            EmployeeWage empWageBuilder= new EmployeeWage();
-            empWageBuilder.AddCompanyEmpWage("Dmart", 20, 20, 90);
-            empWageBuilder.AddCompanyEmpWage("TATA", 20, 23, 100);
-            empWageBuilder.AddCompanyEmpWage("Wipro", 22, 22, 100);
-            empWageBuilder.AddCompanyEmpWage("Infosys",21, 21, 100);
-            empWageBuilder.computeEmpWage();
-            Console.ReadLine();
+          Console.WriteLine("Welcome to Employee Wage Computation");
         }
     }
 }
