@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EmployeeWages
-{
-    internal class EmployeeWage
+{/// <summary>
+/// Employee Wage
+/// </summary>
+    class EmployeeWage
     {
-        /// <summary>
-        /// Employee Wage
-        /// </summary            
         const int Is_Full_Time = 1; //fields here to assign constant values by using keyword const
         const int Is_Part_Time = 2;
         public static void DisplayEmployeeWage(string company, int empRatePerHr, int totalWorkingDays, int workingHours)
@@ -30,12 +29,10 @@ namespace EmployeeWages
                     case Is_Part_Time: // If random value is 2 it will execute block of statement
                         empHrs = 4;
                         // Console.WriteLine("{0} day Employee is working part time", day);
-
                         break;
                     default:
                         empHrs = 0; // If random value is 0 then it will execotr
                                     // Console.WriteLine("{0} day Employee is absent", day);
-
                         break;
                 }
                 // Employee wage calculation part
