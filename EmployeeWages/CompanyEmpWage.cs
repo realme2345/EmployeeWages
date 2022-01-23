@@ -38,5 +38,4 @@ namespace EmployeeWages
             return "Total Emp Wage for company :" + this.company +"\tis :" + this.totalEmployeeWage;
         }
     }
-
 }

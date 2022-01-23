@@ -8,9 +8,6 @@ namespace EmployeeWages
 {
     internal class EmployeeWage : IComputeEmployeeWages
     {
-        /// <summary>
-        /// By using the Interface to shoe the Total Employee wgae
-        /// </summary            
         public const int Is_Full_Time = 2; //fields here to assign constant values by using keyword const
         public const int Is_Part_Time = 1;
         private int numOfCompany = 0;
