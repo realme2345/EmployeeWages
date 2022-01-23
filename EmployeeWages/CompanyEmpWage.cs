@@ -21,7 +21,6 @@ namespace EmployeeWages
         public int numOfWorkingDays;
         public int maxHoursPerMonth;
         public int totalEmployeeWage;
-
         public CompanyEmpWage(string company, int empRatePerHr, int numOfWorkingDays, int maxHoursPermonth)
         {
             this.company = company;  // constructer method
